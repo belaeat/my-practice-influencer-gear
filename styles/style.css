@@ -37,7 +37,7 @@ nav li {
     font-weight: 700;
 }
 
-li a {
+a {
     text-decoration: none;
     color: #3A3A3A;
     font-weight: 600;
@@ -64,7 +64,7 @@ li a {
     margin-bottom: 16px;
 }
 
-.btn-primary .fa-arrow-right {
+.fa-arrow-right {
     margin-left: 8px;
 }
 
@@ -83,7 +83,21 @@ main {
 
 /* Products section */
 
+.semi-title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 600;
+}
+
 .product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.product-info {
     width: 329px;
     height: 476px;
     background: #FFFFFF;
@@ -99,7 +113,7 @@ main {
 
 .product-content {
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .product-title {
@@ -113,7 +127,14 @@ main {
     color: rgba(0, 0, 0, 0.87);
     font-size: 24px;
     font-weight: 400;
-    margin-bottom: 6px;
+}
+
+.product-description {
+    width: 196px;
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
 .rating {
@@ -137,10 +158,94 @@ main {
     color: #FB8200;
 }
 
-.product-description {
-    width: 196px;
-    color: #787885;
-    font-size: 14px;
+.view-more {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color: #E02C6D;
+    text-align: right;
+}
+
+.view-more a {
+    color: #E02C6D;
+}
+
+/* Join Now Section */
+
+.join-now {
+    display: flex;
+    justify-content: space-between;
+    gap: 96px;
+    margin-bottom: 100px;
+}
+
+.join-now .section-title {
+    color: #0A0826;
+    font-size: 38px;
     font-weight: 700;
-    margin-bottom: 6px;
+}
+
+.join-now .section-description {
+    width: 500px;
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.join-now .btn-primary {
+    background: #E02C6D;
+    width: 155px;
+    height: 44px;
+    border-radius: 0;
+}
+
+/* Footer styles */
+
+.footer {
+    background-color: #0A0826;
+    height: 239px;
+    text-align: center;
+    
+}
+
+.footer-content {
+    padding: 50px 590px;
+    width: 262px;
+    height: 140px;
+}
+
+.footer-title {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+
+.footer-description {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    color: #D9DBE1;
+    margin-bottom: 3px;
+}
+
+.footer-icons {
+    margin-top: 16px;
+}
+
+.fa-instagram {
+    color: #FFFFFF;
+    margin-right: 16px;
+}
+.fa-dribbble {
+    color: #FFFFFF;
+    margin-right: 16px;
+}
+.fa-twitter {
+    color: #FFFFFF;
+    margin-right: 16px;
+}
+.fa-youtube {
+    color: #FFFFFF;
+    margin-right: 16px;
 }
